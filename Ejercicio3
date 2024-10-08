@@ -1,0 +1,21 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase2e3;
+
+import javax.swing.JOptionPane;
+
+public class Clase2E3 {
+
+    public static void main(String[] args) {
+          int nota;
+        
+        nota = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese su nota obtenida: "));
+        
+        if (nota >= 70)
+            JOptionPane.showMessageDialog(null, "Usted aprobó");
+        else
+            JOptionPane.showMessageDialog(null, "Usted reprobo");
+    }
+}
