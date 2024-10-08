@@ -1,0 +1,21 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase2e2;
+
+import javax.swing.JOptionPane;
+
+public class Clase2E2 {
+
+    public static void main(String[] args) {
+        int edad;
+        
+        edad = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese su edad: "));
+        
+        if (edad >= 18)
+            JOptionPane.showMessageDialog(null, "Usted si puede votar");
+        else
+            JOptionPane.showMessageDialog(null, "Usted no puede votar");
+    }
+}
