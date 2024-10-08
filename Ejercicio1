@@ -11,11 +11,14 @@ public class Clase2E1 {
     public static void main(String[] args) {
         int n1, n2=30, n3, n4=50;
         int suma;
+        double promedio;
         
         n1 = 20; 
         n3 = 40;
         suma = n1 + n2 + n3 + n4;
+        promedio = suma / 4.0;
         
-         JOptionPane.showMessageDialog(null, "La suma de los 4 números es de: " + suma );
+         JOptionPane.showMessageDialog(null, "La suma de los 4 números es de: " + suma + "\n" + 
+                                             "El promedio de los 4 números es de: " + promedio);
     }
 }
