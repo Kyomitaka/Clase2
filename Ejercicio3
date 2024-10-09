@@ -16,6 +16,9 @@ public class Clase2E3 {
         if (nota >= 70)
             JOptionPane.showMessageDialog(null, "Usted aprobó");
         else
-            JOptionPane.showMessageDialog(null, "Usted reprobo");
+            if (nota >= 60)
+            JOptionPane.showMessageDialog(null, "Usted va a extraordinario");
+            else
+                JOptionPane.showMessageDialog(null, "Usted reprobó");
     }
 }
