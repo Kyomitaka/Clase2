@@ -1,0 +1,20 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase2e4;
+
+import javax.swing.JOptionPane;
+
+public class Clase2E4 {
+
+    public static void main(String[] args) {
+        int DiaSem;
+        DiaSem = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el día de la semana (1=Lunes)"));
+        
+        if (DiaSem == 6 || DiaSem == 7)
+            JOptionPane.showMessageDialog(null, "Día Libre");
+        else
+            JOptionPane.showMessageDialog(null, "Día Laboral");
+    }
+}
