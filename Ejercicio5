@@ -1,0 +1,30 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase2e5;
+
+import javax.swing.JOptionPane;
+
+public class Clase2E5 {
+
+    public static void main(String[] args) {
+        int n1, n2, n3, n4;
+        int mayor;
+        
+        n1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el primer valor: "));
+        n2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el segundo valor: "));
+        n3 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el tercer valor: "));
+        n4 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el cuarto valor: "));
+        
+        mayor = n1;
+        if (n2 > mayor)
+            mayor = n2;
+        if (n3 > mayor)
+            mayor = n3;
+        if (n4 > mayor)
+            mayor = n4;
+       
+        JOptionPane.showMessageDialog(null, "El número mayor es: " + mayor);
+    }
+}
