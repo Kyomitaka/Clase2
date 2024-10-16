@@ -1,1 +1,42 @@
-No lo he podido resolver
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase2e6;
+
+import java.util.Scanner;
+
+public class Clase2E6 {
+
+    public static void main(String[] args) {
+        int antiguedad;
+        int horasSemanales;
+        double precioHora;
+        double salariobruto;
+        double salarioneto;
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Ingrese la cantidad de años que lleva trabajando en la empresa: ");
+        antiguedad = sc.nextInt();
+        System.out.print("Ingrese la cantidad de horas que trabaja: ");
+        horasSemanales = sc.nextInt();
+        System.out.print("Ingrese lo que gana por hora: ");
+        precioHora = sc.nextDouble();
+        
+        salariobruto = precioHora * horasSemanales * 4;
+        if (antiguedad > 12)
+            salariobruto = salariobruto + 5.5/100 * salariobruto;
+        
+        if (salariobruto > 3500)
+            salariobruto = salariobruto - 3.8/100 * salariobruto;
+        
+        else
+            if (salariobruto > 2500)
+                salariobruto = salariobruto - 2.7/100 * salariobruto;
+        
+        salarioneto = salariobruto;
+        
+        System.out.println("Salario neto: " + salarioneto);
+    }
+        
+}
